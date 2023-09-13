@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookMyTickets</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .button3 {
+        background-color: #f44336;
+        border-radius: 5px;
+        color:white;
+
+    }
+
+div.mnu {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+} 
+    .search {
+  width: 300px;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 32px;
+  background: #00B4CC;
+  text-align: center;
+  color: #000000;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+    .navbar {
+        background-color:rgb(5, 5, 25);
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  #rcorners3 {
+  border-radius: 15px ;
+  background-image:url("crkt.jpeg") ;
+  background-position:bottom center;
+  background-repeat: repeat;
+  width: 100%;
+  height: 120px;
+}
+/*movies column*/
+div.gallery {
+  border-radius: 10px 10px 10px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 225px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+    border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 350px;
+}
+
+div.desc {
+  padding: 8px;
+  text-align: center;
+  color: #f2f2f2;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+
+  </style>
+</head>
+<body>
+
+    <ul style="background-color: #1d214c;">
+        <li> <a style="color:rgb(232, 16, 16);"class="navbar-brand" href="#">BookMyTickets</a></li>
+        <li class="navbar-brand"><div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+            
+         </div>
+       
+         <li style="float: right; padding: 10px;"><div class="mnu"></div>
+            <div class="mnu"></div>
+            <div class="mnu"></div>
+        </li>
+        <li style="float: right;  padding: 15px;">
+            <button  class="button button3">Sign In</button>
+        </li>
+    
+      </ul>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Stream</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Plays</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Buzz</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"> ListYourshow</a></li>
+        <li><a href="#"> Coporates</a></li>
+        <li><a href="#"> Offers</a></li>
+        <li><a href="#"> Gifts Card</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img1.png" alt="Image">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img2.png" alt="Image">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img3.png" alt="Image">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img4.png" alt="Image">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+  
+<div class="container text-center"> <br> 
+    <h1 style="color: #f2f2f2;" id="rcorners3"><br>ICC Men's Cricket World Cup 2023</h1> 
+    <h4 style="text-align: left;">Recommended Movies</h4> 
+
+  <div class="gallery">
+  <a target="_blank" href="">
+    <img src="rdx.jpg" alt="Cinque Terre" width="250" height="350">
+  </a>
+  <div class="desc">9.1/10 54.2k Votes</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="">
+      <img src="kok.avif" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">7.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="jvn.jpg" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="javan.webp" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+    
+</div>
+<br>
+<div class="container text-center"> <br> 
+    <h1 style="color: #f2f2f2;" id="rcorners3"><br>ICC Men's Cricket World Cup 2023</h1> 
+    <h4 style="text-align: left;">Recommended Movies</h4> 
+
+  <div class="gallery">
+  <a target="_blank" href="">
+    <img src="rdx.jpg" alt="Cinque Terre" width="250" height="350">
+  </a>
+  <div class="desc">9.1/10 54.2k Votes</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="">
+      <img src="kok.avif" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">7.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="jvn.jpg" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="javan.webp" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+    
+</div>
+<br>
+<div class="container text-center"> <br> 
+    <h1 style="color: #f2f2f2;" id="rcorners3"><br>ICC Men's Cricket World Cup 2023</h1> 
+    <h4 style="text-align: left;">Recommended Movies</h4> 
+
+  <div class="gallery">
+  <a target="_blank" href="">
+    <img src="rdx.jpg" alt="Cinque Terre" width="250" height="350">
+  </a>
+  <div class="desc">9.1/10 54.2k Votes</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="">
+      <img src="kok.avif" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">7.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="jvn.jpg" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="javan.webp" alt="Cinque Terre" width="250" height="350">
+    </a>
+    <div class="desc">8.5/10 54.2k Votes</div>
+  </div>
+    
+</div>
+<br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
